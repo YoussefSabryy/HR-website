@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="Determine The vacations">
+            <link rel="stylesheet" href="..\Css\vacation.css">
+            <style>
+               
+            </style>
+        </head>
+        <body>
+             <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+                <label class="logo">Global HR</label>
+                <ul>
+                    <li><a class="active" href="home.html" target="_self">Home</a></li>
+                    <li><a class="" href="ourfirstpage.html" target="_self">Global HR</a></li>
+                    <li><a href="loginpage.html"  target="_self">log in</a></li>
+                    <li><a href="addemp.html" target="_self">Add Employee</a></li>
+                    <li><a href="search.html" target="_self">Search</a></li>
+                    <li><a href=""  target="_self">Vacations</a></li>
+                </ul>
+            </nav>
+                
+            
+            <div class="enter-the-data">
+                <label>Name</label>
+                <input type="text" placeholder="Type your name...">
+                <label>ID</label>
+                <input type="number" placeholder="Type your id...">
+            </div>
+            
+            <div class="box">
+                <form name="" targe="_blanck" action="">
+                    <label>From</label>
+                    <input type="date">
+                    <label>To</label>
+                    <input type="date">
+                    <div class="tarea">
+                        <textarea>Tell me the reason of vacations</textarea>
+                    </div>
+                    
+                    <button onclick="confirmDelete();">Submit</button>
+                    <p ip="demo"></p>
+
+                    <!-- <input type="submit" value="Submit"> -->
+                </form>
+                
+                <form class="box-2"  targe="_blanck" action="show-vacations.html">
+                    <input class="rev" type="submit" value="Review vacations">
+                </form>
+            </div>
+            
+            <script>
+            function confirmDelete() {
+              let text = "Do you want to approve or reject this vacations ?";
+              if (confirm(text) == true) {
+                text="Approve Success...!";
+              } else {
+                text="Reject Success...!";
+              }
+            }
+            </script>
+            
+        </body>
+    </html>
